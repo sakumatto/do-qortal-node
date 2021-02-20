@@ -1,4 +1,5 @@
 #!/bin/bash
+# A script to install Qortal core & UI on your MAC, by Saku Mättö (@sakumatto in Discord)
 
 set -xe
 
