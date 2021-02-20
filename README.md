@@ -1,6 +1,7 @@
-# Running a Qortal Node on your MAC as you the user
+# Running a Qortal Node on your MAC
 
-This repository helps set up an instance for running the qortal "core" server on your MAC. [Qortal](https://qortal.org) Core is how someone is able to participate in the network and mint coin if so desiring.
+This repository helps set up an instance for running the qortal "core" server on your MAC.
+[Qortal](https://qortal.org) Core is how someone is able to participate in the network and mint coin if so desiring.
 
 ## Getting Started
 
