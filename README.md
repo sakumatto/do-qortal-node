@@ -18,7 +18,7 @@ You can use this one-liner to fetch the script *into your **Downloads** folder* 
 Enter these following commands in Terminal.app (to be found in your Utilities, Cmd-Shift-U while in Finder).
 
 ```
-curl -s https://raw.githubusercontent.com/sakumatto/do-qortal-node/master/qortal-bootstrap.sh > ~/Downloads/qortal-bootstrap.sh
+curl -s https://raw.githubusercontent.com/sakumatto/do-qortal-node/master/qortal-bootstrap.sh > ~/Downloads/qortal-bootstrap.sh && cd ~/Downloads/ && ls qortal*
 ```
 
 Pls note, the .sh file should be executable on your MAC, but if it isn't, then you can run this following command first (to make it executable):
