@@ -19,9 +19,9 @@ curl -s https://raw.githubusercontent.com/sakumatto/do-qortal-node/master/qortal
 
 Pls note, the .sh file should be executable on your MAC, but if it isn't, then you can run this following commands:
 
-´´´´
+´´´
 chmod +x qortal-bootstrap.sh
 ./qortal-bootstrap.sh
-´´´´
+´´´
 
 This script is ported and changed from Qortal user @elarson's original w/ thanks!
