@@ -2,11 +2,26 @@
 
 set -xe
 
-apt update && apt install -yq wget unzip openjdk-14-jre
+
+#On a MAC you need brew installed
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    brew update
+fi
+
+#Install java
+brew install --cask adoptopenjdk
+
+#apt update && apt install -yq wget unzip openjdk-14-jre
 
 echo "Working out of /opt for our qortal core install."
 pushd /opt
 
+#Install brew on MAC to enable next line
+brew install wget
 wget https://github.com/Qortal/qortal/releases/download/v1.4.1/qortal-1.4.1.zip
 unzip qortal-1.4.1.zip
 
