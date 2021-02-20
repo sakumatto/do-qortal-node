@@ -1,7 +1,7 @@
 #!/bin/bash
 # A script to install Qortal core & UI on your MAC, by Saku Mättö (@sakumatto in Discord)
 
-#set -xe
+set -eux
 
 DIR=$(eval echo "~$USER/qortal")
 DL=$(eval echo "~$USER/Downloads")
@@ -12,7 +12,8 @@ echo "Pls be patient and answer any questions"
 which -s brew
 if [[ $? != 0 ]] ; then
     # Install Homebrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 else
     brew update
 fi
