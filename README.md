@@ -13,14 +13,20 @@ The essence of the setup is in the `qortal-bootstrap.sh`. This script handles th
 1. Gives you additional option to download Qortal UI
 
 The script will put all the necessary files in `/Users/username/qortal`.
-You can use this one-liner to fetch the script and run it on your MAC
+You can use this one-liner to fetch the script and run it on your MAC. Enter the command in Terminal.app (to be found in your Utilities, Cmd-Shift-U while in Finder).
 
+```
 curl -s https://raw.githubusercontent.com/sakumatto/do-qortal-node/master/qortal-bootstrap.sh > ~/qortal-bootstrap.sh
+```
 
-Pls note, the .sh file should be executable on your MAC, but if it isn't, then you can run this following commands:
+Pls note, the .sh file should be executable on your MAC, but if it isn't, then you can run this following command first (to make it executable):
 
 ```
 chmod +x qortal-bootstrap.sh
+```
+You can then execute the script:
+
+```
 ./qortal-bootstrap.sh
 ```
 
