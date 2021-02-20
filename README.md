@@ -16,12 +16,14 @@ The essence of the setup is in the `qortal_bootstrap.sh`. This script handles th
 The script will put all the necessary files in `/Users/username/qortal`.
 You can use this one-liner to fetch the script and run it on your MAC
 
-curl ./qortal_bootstrap.sh
-```
+curl $(https://github.com/sakumatto/do-qortal-node/blob/master/qortal_bootstrap.sh)
+curl -s https://raw.githubusercontent.com/sakumatto/do-qortal-node/master/qortal_bootstrap.sh > ~/qortal_bootstrap.sh
+./qortal_bootstrap.sh
 
-When the script is done, you'll have Qortal Core running. You can look at the logs by ssh'ing to your server and running:
+This script is ported and changed from Qortal user @elarson's original w/ thanks!
+Pls note, the .sh file should be executable on your MAC, but if it isn't, then you can run this following commands:
 
-```
-$ tail -f /opt/qortal/log.txt.1
-```
-This script is ported and changed from 
+´´´´
+chomd +x qortal_bootstrap.sh
+./qortal_bootstrap.sh
+´´´´
